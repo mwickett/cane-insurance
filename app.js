@@ -7,6 +7,7 @@ const pageId = require('spike-page-id')
 const marked = require('marked')
 const DotenvPlugin = require('webpack-dotenv-plugin')
 const Contentful = require('spike-contentful')
+const locals = {}
 
 module.exports = {
   devtool: 'source-map',
@@ -18,7 +19,7 @@ module.exports = {
   reshape: (ctx) => {
     return htmlStandards({
       webpack: ctx,
-      locals: { pageId: pageId(ctx), foo: 'bar' }
+      locals: Object.assign(locals, { pageId: pageId(ctx) }, { marked: marked })
     })
   },
   postcss: (ctx) => {
@@ -34,6 +35,17 @@ module.exports = {
     new DotenvPlugin({
       sample: './.env.example',
       path: './.env'
+    }),
+    new Contentful({
+      addDataTo: locals,
+      accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+      spaceId: process.env.CONTENTFUL_SPACE_ID,
+      contentTypes: [
+        {
+          name: 'lander',
+          id: 'lander',
+        },
+      ]
     })
   ]
 }
