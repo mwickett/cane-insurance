@@ -2,6 +2,12 @@
 
 Lander for cane insurance
 
+## Assets needed
+
+* Photo of Jenna
+* Cane & Co Logo
+* Proklink Insurance Logo
+
 ## Setup
 
 - make sure [node.js](http://nodejs.org) is at version >= `6`
