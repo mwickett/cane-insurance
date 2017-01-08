@@ -10,21 +10,22 @@
   "dependencies": {
     "babel-preset-latest": "^6.16.0",
     "hard-source-webpack-plugin": "0.2.2",
+    "image-webpack-loader": "^3.0.0",
     "marked": "^0.3.6",
     "reshape-standard": "^0.4.2",
-    "spike": "^0.14.0",
     "spike-contentful": "^0.4.0",
     "spike-css-standards": "^0.1.3",
     "spike-page-id": "^0.1.0",
-    "webpack": "^1.13.3",
-    "webpack-dotenv-plugin": "^1.4.0"
+    "webpack": "^1.13.3"
   },
   "devDependencies": {
     "ava": "^0.17.0",
     "rimraf": "^2.5.4",
     "snazzy": "^5.0.0",
     "spike-core": "^0.13.0",
-    "standard": "^8.6.0"
+    "standard": "^8.6.0",
+    "webpack-dotenv-plugin": "^1.4.0",
+    "spike": "^0.14.0"
   },
   "homepage": "http://www.caneinsurance.com",
   "main": "app.js",
