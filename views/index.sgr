@@ -1,4 +1,16 @@
 extends(src='layout.sgr')
   block(name='content')
-    h2 {{ contentful.lander[0].headline }}
+    .logo-container
+      img.logo(src='img/cane-logo.png' alt='Cane & Co Insurance Logo')
+
+    h1 {{ contentful.lander[0].headline }}
     p {{ contentful.lander[0].subtitle }}
+
+    img.photo(src='img/jenna-cane-photo.png' alt='Jenna Cane - Broker')
+    img.sig(src='img/jc-sig.png' alt='Cane & Co insurance')
+    p.email {{ contentful.lander[0].email }}
+    p.phone {{ contentful.lander[0].phone }}
+
+    .box
+      p.name {{ contentful.lander[0].name }}
+      img(src='img/prolink-logo.png' alt='Prolink Broker Network logo')
