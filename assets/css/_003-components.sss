@@ -5,27 +5,69 @@
 
 img.logo
   flex: 0 1 auto
-  max-width: 300px
-  min-width: 100px
+  max-width: 150px
 
+@media (min-width: 775px)
+  img.logo
+    max-width: 300px
+
+.container
+  padding: 15px
+
+.container p,
+.container h1
+  margin-left: auto
+  margin-right: auto
+
+.container p
+  max-width: 700px
+
+.container h1
+  margin-top: 0
+  max-width: 900px
+
+.flex-grid
+  display: flex
+
+.col
+  flex: 1
 
 img.photo
-  max-width: 500px
-  width: 100px
+  max-width: 100px
+  margin-left: -15px
+  margin-bottom: -20px
+
+@media (min-width: 775px)
+  img.photo
+    max-width: 300px
 
 img.sig
   width: 100px
 
+p.email,
+p.phone
+  text-align: right
+  font-size: 12px
+  margin: 0.5em
 
 .box
   width: 100%
   background-color: var(--caneMist)
-  border-top: 3px solid var(--caneSun)
+  border-top: 5px solid var(--caneSun)
   display: flex
   flex-flow: row no-wrap
+  align-items: center
   justify-content: space-between
-  align-items: baseline
-  padding: 1em
+  padding: 10px
+  color: black
 
 .box img
   width: 100px
+  padding-right: 10px
+  flex: 0 1 100px
+
+.box p.name
+  margin: 0
+  font-weight: bold
+  padding: 0 10px
+  flex: 1 0 auto
