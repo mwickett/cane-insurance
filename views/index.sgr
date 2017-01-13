@@ -11,9 +11,9 @@ extends(src='layout.sgr')
         .col
           p {{ contentful.lander[0].subtitle }}
           img.sig(src='img/jc-sig.png' alt='Cane & Co insurance')
-          p
+          p.phone
             a.email(href='mailto:{{ contentful.lander[0].email }}') {{ contentful.lander[0].email }}
-          p.phone {{ contentful.lander[0].phone }}
+            |&nbsp; or {{ contentful.lander[0].phone }}
 
     .box
       p.name {{ contentful.lander[0].name }}
