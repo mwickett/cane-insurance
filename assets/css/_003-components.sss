@@ -29,26 +29,49 @@ img.logo
 .flex-grid
   display: flex
 
+@media (max-width: 374px)
+  .flex-grid
+    display: block
+
 .col
   flex: 1
 
 img.photo
-  max-width: 100px
+  max-width: 180px
   margin-left: -15px
   margin-bottom: -20px
+  position: absolute
+  bottom: 80px
 
-@media (min-width: 775px)
+@media (max-width: 374px)
+  img.photo
+    display: none
+
+@media (min-width: 424px)
+  img.photo
+    max-width: 200px
+
+@media (min-width: 768px)
   img.photo
     max-width: 300px
+
+
+@media (min-width: 1500px)
+  img.photo
+    max-width: 400px
+
 
 img.sig
   width: 100px
 
-p.email,
-p.phone
-  text-align: right
-  font-size: 12px
-  margin: 0.5em
+a.email,
+a.email:visited,
+a.email:active
+  color: var(--caneSlate)
+  text-decoration: none
+  border-bottom: 1px solid var(--caneSun)
+
+
 
 .box
   width: 100%
@@ -60,6 +83,9 @@ p.phone
   justify-content: space-between
   padding: 10px
   color: black
+  height: 60px
+  position: absolute
+  bottom: 0vh
 
 .box img
   width: 100px
