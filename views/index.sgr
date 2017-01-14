@@ -5,10 +5,9 @@ extends(src='layout.sgr')
     .container
       h1 {{ contentful.lander[0].headline }}
 
-      .flex-grid
-        .col
-          img.photo(src='img/jenna-cane-photo.png' alt='Jenna Cane - Broker')
-        .col
+      .flex-container
+        img.photo(src='img/jenna-cane-photo.png' alt='Jenna Cane - Broker')
+        .flex-content
           p {{ contentful.lander[0].subtitle }}
           img.sig(src='img/jc-sig.png' alt='Cane & Co insurance')
           p
