@@ -24,7 +24,12 @@ a.email:visited,
 a.email:active
   color: var(--caneSlate)
   text-decoration: none
-  border-bottom: 1px solid var(--caneSun)
+  border-bottom: 1px solid var(--caneMist)
+  transition: 200ms ease-in-out
+
+a.email:hover
+  border-bottom: 3px solid var(--caneSun)
+  transition: 200ms ease-in-out
 
 .box
   width: 100%
@@ -80,6 +85,11 @@ a.email:active
   .jenna img
     padding: 3px 39px 0px 49px
 
-.flex-content p
+p.content
+  text-align: center
+  max-width: 800px
   margin: 0 auto
-  margin-bottom: 0.8em
+
+p.contact
+  margin: 0
+  margin-bottom: 0.5em

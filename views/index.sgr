@@ -4,16 +4,16 @@ extends(src='layout.sgr')
       img.logo(src='img/cane-logo.png' alt='Cane & Co Insurance Logo')
     .container
       h1 {{ contentful.lander[0].headline }}
-      p {{ contentful.lander[0].subtitle }}
+      p.content {{ contentful.lander[0].subtitle }}
 
       .flex-container
         .jenna
           img(src='img/jenna-cane-photo.png' alt='Jenna Cane - Broker')
         .flex-content
           img.sig(src='img/jc-sig.png' alt='Cane & Co insurance')
-          p
+          p.contact
             a.email(href='mailto:{{ contentful.lander[0].email }}') {{ contentful.lander[0].email }}
-          p {{ contentful.lander[0].phone }}
+          p.contact {{ contentful.lander[0].phone }}
 
     .box
       .box-container
