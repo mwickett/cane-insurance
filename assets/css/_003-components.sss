@@ -19,18 +19,6 @@ img.sig
   img.sig
     width: 150px
 
-a.email,
-a.email:visited,
-a.email:active
-  color: var(--caneSlate)
-  text-decoration: none
-  border-bottom: 1px solid var(--caneMist)
-  transition: 200ms ease-in-out
-
-a.email:hover
-  border-bottom: 3px solid var(--caneSun)
-  transition: 200ms ease-in-out
-
 .box
   width: 100%
   background-color: var(--caneMist)
@@ -40,17 +28,22 @@ a.email:hover
   position: fixed
   bottom: 0vh
 
+.box-container
+  max-width: 1000px
+
 .box-container img
   width: 125px
   padding-right: 10px
   flex: 0 1 100px
 
-.box-container p.name
-  margin: 0
+.box-container .name
   padding: 0 10px
   flex: 1 0 auto
-  font-size: responsive 14px 24px
+
+.box-container .name p
+  font-size: responsive 14px 20px
   font-weight: 400
+  margin: 0
 
 .jenna
   background-color: var(--caneSlate)
@@ -85,8 +78,7 @@ a.email:hover
   .jenna img
     padding: 3px 39px 0px 49px
 
-p.content
-  text-align: center
+.content
   max-width: 800px
   margin: 0 auto
 

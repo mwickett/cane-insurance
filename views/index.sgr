@@ -4,7 +4,7 @@ extends(src='layout.sgr')
       img.logo(src='img/cane-logo.png' alt='Cane & Co Insurance Logo')
     .container
       h1 {{ contentful.lander[0].headline }}
-      p.content {{ contentful.lander[0].subtitle }}
+      .content {{{ marked(contentful.lander[0].subtitle) }}}
 
       .flex-container
         .jenna
@@ -17,5 +17,5 @@ extends(src='layout.sgr')
 
     .box
       .box-container
-        p.name {{ contentful.lander[0].name }}
+        .name {{{ marked(contentful.lander[0].name) }}}
         img(src='img/prolink-logo.png' alt='Prolink Broker Network logo')
